@@ -2,12 +2,32 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Regulamento</title>
+		<title>Regulamento e Inscrição</title>
 		<link rel="stylesheet" type="text/css" href="_css3/style.css"/>
+		<!-- Importar arquivo CSS -->
+		<link rel="stylesheet" type="text/css" href="_css3/style.css"/>
+		<!-- Importar fonte -->
+		<link href="https://fonts.googleapis.com/css?family=Gelasio|Lato&display=swap" rel="stylesheet">
+		<link href="_imagens/_banner-e-logo/grupo-capoeira-dende-carapicuiba-logo.png" rel="icon"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	</head>
 	<body>
 		<!-- REGULAMENTO -->
-		<div class="regulamento">
+		<header class="cabecalho">
+			<a href="index.html"><h1 class="logo">Grupo de Capoeira Dendê</h1></a>
+			<button class="botaoabrirmenu"><i class="fa fa-bars fa-lg"></i></button>
+			<!-- MENU -->
+			<nav class="menu">
+				<a class="botaofecharmenu">x</a>
+				<ul>
+					<li><a href="index.html">Página inicial</a></li>
+					<li><a class="menuregulamento" href="#regulamento">Regulamento</a></li>
+					<li><a class="menucronograma" href="#cronograma">Cronograma</a></li>
+					<li><a href="https://forms.gle/2qJNTugwt9xe63mc6"> Inscrição </a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="regulamento" id="regulamento">
 			<h1>3º Jogos Abertos de Capoeira Dendê em Carapicuíba</h1>
 			<h3>IMPORTANTE: O objetivo desse evento é incentivar o espírito competitivo dos nossos alunos com todo o fair play e resgatar a cultura popular brasileira de um modo esportivo, incentivando a prática da capoeira e mostrando para a comunidade a importância da atividade física.</h3>
 			<h2>REGULAMENTO</h2>
@@ -31,7 +51,7 @@
 			<p>Os critérios que mais serão avaliados nos 3° Jogos Abertos de Capoeira Dendê, serão:</p>
 			<p>Evolução no jogo;</p>
 			<p>Técnica de entrada e saída dos movimentos, e aplicação dos mesmos;</p>
-			<p>Rasteira, desequilibrantes, tesoura, condição física, expressão, etc.</p>
+			<p>Rasteira, desequilibrantes, tesoura, condição física, expressão, bandas, vingativas, etc.</p>
 			<h3>Artigo 8</h3>
 			<p>Os Atletas serão classificados pela somatória dos pontos atribuídos de 01 (um) a 10 (dez) por cada jogo; os vencedores serão os que obtiverem maiores pontos na somatória geral.</p>
 			<h3>Artigo 9</h3>
@@ -60,14 +80,14 @@
 			<p>No ritmo de São Bento Pequeno de Angola não é obrigatória a saída com Aú e nem a chamada será obrigatória.</p>
 			<p>Nesses ritmos as mãos não poderão tocar o outro capoeirista nas relações de ataque e sim nas defesas.</p>
 			<p>Na desenvoltura do jogo, os atletas não serão pontuados quando aplicarem um movimento desequilibrante e caírem juntamente com o outro capoeirista.</p>
-			<h3>DISPOSIÇÕES FINAIS</h3>
+			<h2 id="disposicoes">DISPOSIÇÕES FINAIS</h2>
 			<h3>Artigo 12</h3>
 			<p>Os atletas e capoeiristas participantes deverão estar de posse do RG original, e um termo de responsabilidade dos pais ou responsáveis autorizando a participação no evento quando este for menor de idade.</p>
 			<h3>Artigo 13</h3>
 			<p>Todos os capoeiristas deverão estar devidamente uniformizados, na forma do regulamento, com calça de capoeira branca (até o calcanhar e com o logo da sua escola) e camiseta que será concedida no evento, sendo obrigatório o uso do uniforme desde a abertura até o fechamento do evento.</p>
 			<h3>Artigo 14</h3>
 			<p>Em cada categoria terá que haver, no mínimo, 10 atletas inscritos.</p>
-			<h2>CRONOGRAMA</h2>
+			<h2 id="cronograma">CRONOGRAMA</h2>
 			<h3>Artigo 15</h3>
 			<p>O horário da competição se iniciará a partir 08:00 horas da manhã. Com um intervalo das 13:00 horas às 14:00 horas para almoço.</p>
 			<h3>Artigo 16</h3>
@@ -88,12 +108,37 @@
 			<p>O evento corresponderá ao regulamento no Jogo de São Bento Grande (Regional) e São Bento Pequeno de Angola.</p>
 			<div class="container">
 				<!-- BOTÕES DE FORMULÁRIOS -->
-				<button class="infantil"><a href="https://forms.gle/2qJNTugwt9xe63mc6"> Inscrição </a></button>
+				<button class="inscricao"><a href="https://forms.gle/2qJNTugwt9xe63mc6"> Inscrição </a></button>
 			</div>
 			<div class="container">
 				<!-- BOTÃO VOLTAR -->
 				<button class="voltar"><a href="index.html"> Voltar </a></button>
 			</div>
 		</div>
+		<!--========== DIVISÓRIA RODAPÉ ============-->
+		<div class="rodape">
+			<footer>
+				Desenvolvido por &copy;Bruno Gattai, 2019.
+			</footer>
+		</div>
+		<!-- IMPORTAR JQUERY -->
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<!-- JAVASCRIPT -->
+		<script>
+			// CAPTURA DE INPUTS NOS BOTÕES //
+			$(".botaoabrirmenu").click(function() {
+				$(".menu").show();
+			});
+			$(".botaofecharmenu").click(function() {
+				$(".menu").hide();
+			});
+			$(".menuregulamento").click(function() {
+				$(".menu").hide();
+			});
+			$(".menucronograma").click(function() {
+				$(".menu").hide();
+			});
+		</script>
 	</body>
 </html>
