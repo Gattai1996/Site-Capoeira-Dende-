@@ -1,0 +1,730 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+body {
+	background-color: #f5f5f5;
+}
+/* Cabeçalho */
+.cabecalho {
+	width: 100%; 
+	float: left; 
+	padding: 1%; 
+	background-color: #fff
+}
+.logo {width: 56px; 
+	height: 56px; 
+	float: left;
+	background: url(../_imagens/_banner-e-logo/grupo-capoeira-dende-carapicuiba-logo.png) 
+	center center/56px no-repeat;
+	font-size: 0
+}
+.botaoabrirmenu {
+	width: 56px; 
+	height: 56px; 
+	float: right; 
+	text-align: center; 
+	color: white; 
+	border-radius: 5em;
+	cursor: pointer; 
+	background-color: darkgreen; 
+	transition: background-color 0.3s
+}
+.botaoabrirmenu:hover {
+	cursor: pointer; 
+	background-color: goldenrod; 
+	color: black
+}
+p {
+	font-family: 'Gelasio', 
+	serif; text-align: justify; 
+	text-indent: 50px;
+}
+/* Menu */
+.menu {
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	background-color: rgba(0,0,0,0.9); 
+	transition: background-color 0.3s; 
+	padding: 2%
+}
+.menu ul {
+	width: 100%; 
+	float: left; 
+	text-align: center
+}
+.menu li {
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	border-radius: 5em;
+	margin: 1%;
+	padding: 1%; 
+	list-style-type: none
+}
+.menu li a {
+	font-size: 2em; 
+	color: #fff; 
+	padding: 1%; 
+	text-decoration: none
+}
+.menu li:hover {
+	background-color: goldenrod; 
+	transition: background-color 0.3s;
+}
+.botaofecharmenu {
+	font-size: 3em; 
+	color: #fff; float: right; 
+	cursor: pointer; 
+	margin-right: 5%; 
+	padding: 2%
+}
+.botaofecharmenu:hover {
+	background-color: goldenrod; 
+	transition: background-color 0.3s;
+}
+/* Div inicial */
+.inicial {
+	width: 100%; 
+	float: left; 
+	text-align: center; 
+	color: #000; 
+	background-color: #ffdd57; 
+	padding: 2%
+}
+.titulo {
+	font-size: 2em; 
+	font-weight: bold; 
+	padding: 2%
+}
+.subtitulo {
+	font-size: 1.5em; 
+	padding: 2%
+}
+.banner {
+	width: 100%; 
+	float: left; 
+	padding: 2%
+}
+.inicial button {
+	width: 80%; 
+	font-size:1.5em; 
+	text-align: center; 
+	cursor: pointer; 
+	padding: 2%;
+	color: #fff; 
+	background-color: darkgreen; 
+	border-radius: 2em; 
+	margin: 2% 0 2% 0
+}
+.inicial button a {
+	color: white; 
+	text-decoration: none
+}
+.inicial button:hover {
+	background-color: goldenrod; 
+	color: black
+}
+/* Div Aulas */
+.aulas {
+	width: 100%; 
+	float: left; 
+	color: #000; 
+	background-color: #fff; 
+	padding: 2%
+}
+.aulas h1 {
+	font-size: 1.5em; 
+	text-align: center; 
+	font-weight: bold; 
+	padding: 2%
+}
+.aulas h2 {
+	font-size: 1.25em; 
+	text-align: center; 
+	padding: 2%
+}
+.aulas h3 {
+	font-size: 1em; 
+	text-align: justify; 
+	font-weight: bold; 
+	padding: 2%
+}
+.aulas p {
+	font-size: 1em; 
+	text-align: justify; 
+	padding: 2%
+}
+/* Div Mestres */
+.mestres {
+	width: 100%; 
+	float:left; 
+	color: white; 
+	background-color: black; 
+	padding: 2%
+}
+.fotomestre {
+	width: 100%; 
+	padding: 2%;  
+	float: left
+}
+.mestres h1 {
+	font-size: 1.5em;
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.mestres h2 {
+	font-size: 1.25em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.mestres p {
+	font-size: 1em; 
+	text-align: justify; 
+	padding: 2%
+}
+.mestres button {
+	width: 100%; 
+	padding: 2%; 
+	font-weight: bold; 
+	cursor: pointer
+}
+.mestres button:hover {
+	background-color: goldenrod; 
+	transition: background-color 0.3s
+}
+.historiaparafuso {
+	display: none
+}
+.historiaindio {
+	display: none
+}
+.parafusoabrir {
+	border-radius: 3em; 
+	padding: 2%
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+.indioabrir {
+	border-radius: 3em; 
+	padding: 2%
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+.parafusofechar {
+	display: none; 
+	border-radius: 3em; 
+	padding: 2%
+}
+.indiofechar {
+	display: none; 
+	border-radius: 3em; 
+	padding: 2%
+}
+/* Div Graduações */
+.graduacoes {
+	width: 100%; 
+	float: left; 
+	padding: 2%; 
+	color: white; 
+	background-color: #209cee
+}
+.graduacoes h1 {
+	font-size: 3em; 
+	text-align: center; 
+	padding: 2%; 
+	font-weight: bold
+}
+.graduacoes h2 {
+	font-size: 2em; 
+	text-align: center; 
+	padding: 2%
+}
+.graduacoes h3 {
+	font-size: 3em; 
+	text-align: center; 
+	padding: 2%
+}
+.faixaetaria {
+	width: 96%; 
+	float: left; 
+	background-color: #41a512; 
+	border-radius: 2em;
+	padding: 2%;
+	margin: 2%;
+}
+.subdiv {
+	padding: 2%; 
+	float: left
+}
+.subdiv img {
+	width: 100%; 
+	padding: 2%; 
+	float: left
+}
+.subdiv h4 {
+	font-size: 2.5em; 
+	font-weight: bold; 
+	text-align: center;
+	padding: 2%; 
+	float: left; 
+	position: relative
+}
+.subdiv h5 {
+	font-size: 2em; 
+	text-align: center; 
+	padding: 2%; 
+	float: left; 
+	position: relative
+}
+/* Div Rodas */
+.rodas {width: 100%; 
+	padding: 2%; 
+	float: left; 
+	color: white; 
+	background-color: black
+}
+.rodas h1 {
+	font-size: 3em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.rodas h2 {
+	font-size: 2em; 
+	text-align: center; 
+	padding: 2%
+}
+.fotos {
+	width: 100%; 
+	float: left; 
+	padding: 1%; 
+	border-radius: 1em
+}
+/* Div Sobre */
+.sobre {
+	width: 100%; 
+	padding: 2%; 
+	float: left; 
+	color: black; 
+	background-color: #ffdd57
+}
+.sobre h1 {
+	font-size: 2em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.sobre h2 {
+	font-size: 1.5em; 
+	text-align: center; 
+	padding: 2%
+}
+.sobre h3 {
+	font-size: 1.25em; 
+	text-align: center; 
+	padding: 2%
+}
+.sobre p {
+	font-size: 1em; 
+	text-align: center; 
+	margin: 2% 0 2% 0
+}
+.centralizar {
+	float: left; 
+	width: 100%; 
+	margin: 5% 0 5% 0
+}
+.facebook {
+	float: left; 
+	background-color: #2a4fc9; 
+	border-radius: 5em; 
+	padding: 1em;
+	margin: 1em
+}
+.facebook a {
+	font-size: 1.5em; 
+	color: white; 
+	text-align: center; 
+	text-decoration: none
+}
+.topo {
+	float: left; 
+	background-color: #1e9e23; 
+	border-radius: 5em; 
+	padding: 1em;
+	margin: 1em
+}
+.topo a {
+	font-size: 1.5em; 
+	color: white; 
+	text-align: center; 
+	text-decoration: none
+}
+/*Div Rodapé */
+.rodape {
+	width: 100%; 
+	color: white; 
+	background-color: black; 
+	float: left; 
+	font-size: 1em; 
+	text-align: center; 
+	padding: 2%
+}
+/* Regulamento */
+.container {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center; 
+	align-items: center
+}
+.regulamento {
+	color: black; 
+	background-color: white
+}
+.regulamento h1 {
+	font-size: 2em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 5%
+}
+.regulamento h2 {
+	font-size: 1.75em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.regulamento h3 {
+	font-size: 1.5em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.regulamento h4 {
+	font-size: 1.3em; 
+	font-weight: bold; 
+	text-align: center; 
+	padding: 2%
+}
+.regulamento p {
+	font-size: 1.25em; 
+	text-align: center; 
+	padding: 1%; 
+	margin: 0
+}
+.regulamento ul li {
+	font-size: 1.25em; 
+	font-weight: bold;
+	text-align: center; 
+	padding: 1%
+}
+.infantil {
+	float: left; 
+	font-size: 2em; 
+	background-color: #1bcf4b; 
+	padding: 1em; 
+	border-radius: 5em; 
+	margin: 2%
+}
+.infantil a {
+	font-weight: bold; 
+	color: black; 
+	text-decoration: none
+}
+.adulto {
+	float: left; 
+	font-size: 2em; 
+	background-color: #349beb; 
+	padding: 1em; 
+	border-radius: 5em; 
+	margin: 2%
+}
+.adulto a {
+	font-weight: bold; 
+	color: black; 
+	text-decoration: none
+}
+.voltar {
+	float: left; 
+	font-size: 2em; 
+	background-color: #fc0320; 
+	padding: 1em; 
+	border-radius: 5em; 
+	margin: 2%
+}
+.voltar a {
+	font-weight: bold; 
+	color: black; 
+	text-decoration: none
+}
+/* Responsividade */
+@media screen and (min-width: 768px) {
+	/* Div Inicial */
+	.botaoabrirmenu {
+		width: 56px; 
+		height: 56px
+	}
+	.titulo {
+		font-size: 2em
+	}
+	.subtitulo{
+		font-size: 1.5em; 
+		line-height: 50px
+	}
+	.banner {
+		width: 50%
+	}
+	.inicial button {
+		width: 40%
+	}
+	/* Regulamento */
+	.regulamento h1 {
+		font-size: 2.5em
+	}
+	.regulamento h2 {
+		font-size: 2em
+	}
+	.regulamento h3 {
+		font-size: 1.75em
+	}
+	.regulamento h4 {
+		font-size: 1.5em
+	}
+	.regulamento p {
+		font-size: 1.25em
+	}
+	.regulamento ul li {
+		font-size: 1.25em
+	}
+	.infantil {
+		font-size: 2em
+	}
+	.adulto {
+		font-size: 2em
+	}
+	.voltar {
+		font-size: 2em
+	}
+	/* Div Aulas */
+	.aulas h1 {
+		font-size: 2em
+	}
+	.aulas h2 {
+		font-size: 1.5em
+	}
+	.aulas h3 {
+		font-size: 1.25em
+	}
+	.aulas p {
+		font-size: 1.25em
+	}
+	/* Div Mestres */
+	.mestres h1 {
+		font-size: 2em
+	}
+	.mestres h2 {
+		font-size: 1.5em
+	}
+	.mestres p {
+		font-size: 1.25em; 
+		padding: 5%
+	}
+	.parafuso {
+		width: 50%; 
+		float: left; 
+		border-style: solid; 
+		border-radius: 1em; 
+		border-right: 1%
+	}
+	.indio {
+		width: 50%; 
+		float: left; 
+		border-style: solid; 
+		border-radius: 1em; 
+		border-width: 1%
+	}
+	.graduacoes h3 {
+		font-size: 2em
+	}
+	.subdiv h4 {
+		font-size: 1.25em
+	}
+    .subdiv h5 {
+    	font-size: 1.2em
+    }
+    /* Div Graduacoes */
+    .faixaetaria {
+    	width: 29%; 
+    	margin: 2%
+    	padding: 1%;
+    }
+	/* Div Rodas */
+	.rodas h1 {
+		font-size: 3.5em
+	}
+	.rodas h2 {
+		font-size: 2.5em
+	}
+	.fotos {
+		width: 50%
+	}
+	/* Div Sobre */
+	.sobre h1 {
+		font-size: 3em
+	}
+	.sobre h2 {
+		font-size: 2.5em
+	}
+   	.sobre h3 {
+   		font-size: 2em
+   	}
+ 	.sobre p {
+ 		font-size: 1.5em
+ 	}
+}
+@media screen and (min-width: 1280px) {
+	/* Div Menu */
+	.botaoabrirmenu {
+		display: none
+	}
+	.botaofecharmenu {
+		display: none
+	}
+	.menu {
+		width: auto; 
+		height: 56px; 
+		line-height: 56px; 
+		float: right; 
+		background-color: white; 
+		display: block !important; 
+		position: static; 
+		padding: 0; 
+		margin: 0
+	}
+	.menu li {
+		padding: 0; 
+		margin: 0; 
+		float: left
+	}
+	.menu li a {
+		border-style: solid;
+		border-color: black;
+		border-width: 1px;
+		border-radius: 5em;
+		margin: 5px;
+		color: black; 
+		font-size: 1.5em; 
+		padding: 15px; 
+		transition: background-color 0.3s
+	}
+	.menu li a:hover {
+		background-color: goldenrod
+	}
+	/* Div Inicial */
+	.titulo {
+		font-size: 2.5em
+	}
+	.subtitulo {
+		font-size: 2em; 
+		line-height: 100px
+	}
+	.inicial button {
+		font-size: 2.5em
+	}
+	.modal-content h1 {
+		font-size: 2em; 
+		font-weight: bold; 
+		text-align: center
+	}
+	.modal-content h2 {
+		font-size: 1.75em; 
+		font-weight: bold; 
+		text-align: center
+	}
+	.modal-content h3 {
+		font-size: 1.50em; 
+		text-align: center
+	}
+	.modal-content h4 {
+		font-size: 1.25em; 
+		text-align: justify
+	}
+	.modal-content p {
+		font-size: 1em; 
+		text-align: justify
+	}
+	/* Regulamento */
+	.regulamento h1 {
+		font-size: 3em
+	}
+	.regulamento h2 {
+		font-size: 2.5em
+	}
+	.regulamento h3 {
+		font-size: 1.75em
+	}
+	.regulamento h4 {
+		font-size: 1.5em
+	}
+	.regulamento p {
+		font-size: 1.5em
+	}
+	.regulamento ul li {
+		font-size: 1.5em
+	}
+	.infantil {
+		font-size: 2em
+	}
+	.adulto {
+		font-size: 2em
+	}
+	.voltar {
+		font-size: 2em
+	}
+	/* Div Aulas */
+	.aulas h1 {
+		font-size: 2.5em
+	}
+	.aulas h2 {
+		font-size: 2em
+	}
+	.aulas h3 {
+		font-size: 1.5em
+	}
+	.aulas p {
+		font-size: 1.5em
+	}
+	/* Div Mestres */
+	.mestres h1 {
+		font-size: 2.5em
+	}
+	.mestres h2 {
+		font-size: 2em
+	}
+	.mestres p {
+		font-size: 1.5em
+	}
+	.parafusoabrir {
+		font-size: 1.5em
+	}
+	.indioabrir {
+		font-size: 1.5em
+	}
+	.parafusofechar {
+		font-size: 1.5em
+	}
+	.indiofechar {
+		font-size: 1.5em
+	}
+}
