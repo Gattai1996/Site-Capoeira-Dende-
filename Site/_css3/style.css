@@ -14,12 +14,14 @@ body {
 }
 /* Cabeçalho */
 .cabecalho {
+	position: fixed;
 	width: 100%; 
 	float: left; 
 	padding: 1%; 
-	background-color: #fff
+	background-color: #209cee
 }
-.logo {width: 56px; 
+.logo {
+	width: 56px; 
 	height: 56px; 
 	float: left;
 	background: url(../_imagens/_banner-e-logo/grupo-capoeira-dende-carapicuiba-logo.png) 
@@ -63,13 +65,11 @@ p {
 	text-align: center
 }
 .menu li {
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
 	border-radius: 5em;
 	margin: 1%;
 	padding: 1%; 
-	list-style-type: none
+	list-style-type: none;
+	transition: background-color 0.3s
 }
 .menu li a {
 	font-size: 2em; 
@@ -79,11 +79,12 @@ p {
 }
 .menu li:hover {
 	background-color: goldenrod; 
-	transition: background-color 0.3s;
+	color: black
 }
 .botaofecharmenu {
 	font-size: 3em; 
-	color: #fff; float: right; 
+	color: #fff; 
+	float: right; 
 	cursor: pointer; 
 	margin-right: 5%; 
 	padding: 2%
@@ -99,7 +100,10 @@ p {
 	text-align: center; 
 	color: #000; 
 	background-color: #ffdd57; 
-	padding: 2%
+	padding: 2%;
+}
+.inicial h1 {
+	margin-top: 2em
 }
 .titulo {
 	font-size: 2em; 
@@ -117,7 +121,6 @@ p {
 }
 .inicial button {
 	width: 80%; 
-	font-size:1.5em; 
 	text-align: center; 
 	cursor: pointer; 
 	padding: 2%;
@@ -127,6 +130,8 @@ p {
 	margin: 2% 0 2% 0
 }
 .inicial button a {
+	font-size: 1em; 
+	font-weight: bold;
 	color: white; 
 	text-decoration: none
 }
@@ -279,14 +284,12 @@ p {
 	text-align: center;
 	padding: 2%; 
 	float: left; 
-	position: relative
 }
 .subdiv h5 {
 	font-size: 2em; 
 	text-align: center; 
 	padding: 2%; 
-	float: left; 
-	position: relative
+	float: left;
 }
 /* Div Rodas */
 .rodas {width: 100%; 
@@ -351,7 +354,8 @@ p {
 	background-color: #2a4fc9; 
 	border-radius: 5em; 
 	padding: 1em;
-	margin: 1em
+	margin: 1em;
+	transition: background-color 0.3s
 }
 .facebook a {
 	font-size: 1.5em; 
@@ -359,12 +363,19 @@ p {
 	text-align: center; 
 	text-decoration: none
 }
+.facebook:hover {
+	background-color: goldenrod 
+}
 .topo {
 	float: left; 
 	background-color: #1e9e23; 
 	border-radius: 5em; 
 	padding: 1em;
-	margin: 1em
+	margin: 1em;
+	transition: background-color 0.3s
+}
+.topo:hover {
+	background-color: goldenrod 
 }
 .topo a {
 	font-size: 1.5em; 
@@ -397,7 +408,7 @@ p {
 	font-size: 2em; 
 	font-weight: bold; 
 	text-align: center; 
-	padding: 5%
+	padding-top: 3em
 }
 .regulamento h2 {
 	font-size: 1.75em; 
@@ -429,41 +440,36 @@ p {
 	text-align: center; 
 	padding: 1%
 }
-.infantil {
+.inscricao {
 	float: left; 
-	font-size: 2em; 
 	background-color: #1bcf4b; 
 	padding: 1em; 
 	border-radius: 5em; 
-	margin: 2%
+	margin: 1em;
+	transition: background-color 0.3s
 }
-.infantil a {
-	font-weight: bold; 
-	color: black; 
-	text-decoration: none
+.inscricao:hover {
+	background-color: goldenrod
 }
-.adulto {
-	float: left; 
-	font-size: 2em; 
-	background-color: #349beb; 
-	padding: 1em; 
-	border-radius: 5em; 
-	margin: 2%
-}
-.adulto a {
+.inscricao a {
+	font-size: 1.5em; 
 	font-weight: bold; 
 	color: black; 
 	text-decoration: none
 }
 .voltar {
 	float: left; 
-	font-size: 2em; 
 	background-color: #fc0320; 
 	padding: 1em; 
 	border-radius: 5em; 
-	margin: 2%
+	margin: 1em;
+	transition: background-color 0.3s
+}
+.voltar:hover {
+	background-color: goldenrod
 }
 .voltar a {
+	font-size: 1.5em; 
 	font-weight: bold; 
 	color: black; 
 	text-decoration: none
@@ -506,15 +512,6 @@ p {
 	}
 	.regulamento ul li {
 		font-size: 1.25em
-	}
-	.infantil {
-		font-size: 2em
-	}
-	.adulto {
-		font-size: 2em
-	}
-	.voltar {
-		font-size: 2em
 	}
 	/* Div Aulas */
 	.aulas h1 {
@@ -606,11 +603,11 @@ p {
 		height: 56px; 
 		line-height: 56px; 
 		float: right; 
-		background-color: white; 
+		background-color: #209cee; 
 		display: block !important; 
 		position: static; 
 		padding: 0; 
-		margin: 0
+		margin: 0;
 	}
 	.menu li {
 		padding: 0; 
@@ -618,18 +615,18 @@ p {
 		float: left
 	}
 	.menu li a {
-		border-style: solid;
-		border-color: black;
-		border-width: 1px;
 		border-radius: 5em;
 		margin: 5px;
-		color: black; 
+		color: white; 
+		font-weight: bold;
 		font-size: 1.5em; 
 		padding: 15px; 
+		background-color: darkgreen; 
 		transition: background-color 0.3s
 	}
 	.menu li a:hover {
-		background-color: goldenrod
+		background-color: goldenrod;
+		color: black;
 	}
 	/* Div Inicial */
 	.titulo {
@@ -666,7 +663,7 @@ p {
 	}
 	/* Regulamento */
 	.regulamento h1 {
-		font-size: 3em
+		font-size: 3em;
 	}
 	.regulamento h2 {
 		font-size: 2.5em
@@ -682,15 +679,6 @@ p {
 	}
 	.regulamento ul li {
 		font-size: 1.5em
-	}
-	.infantil {
-		font-size: 2em
-	}
-	.adulto {
-		font-size: 2em
-	}
-	.voltar {
-		font-size: 2em
 	}
 	/* Div Aulas */
 	.aulas h1 {
